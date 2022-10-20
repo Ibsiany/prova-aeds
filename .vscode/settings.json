@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "iosfwd": "c",
+    "arvoreb.h": "c",
+    "system_error": "c",
+    "prova1.h": "c",
+    "stdio.h": "c",
+    "hash_table.h": "c",
+    "stdlib.h": "c"
+  }
+}
