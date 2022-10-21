@@ -4,6 +4,7 @@
 
 #include "./prova1.h"
 
+
 typedef struct Node
 {
     Key_Sorting *key;

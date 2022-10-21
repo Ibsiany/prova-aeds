@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-
-// #include "./arvoreb.h"
 #include "./hash_table.h"
+#include "./lista.h"
 
 int n = 100;
 
@@ -386,81 +385,6 @@ void selecaoSubs(FILE *arq, FILE *arq1, FILE *arq2, FILE *arq3, FILE *arq4, FILE
     particao++;
 }
 
-// void select_arvore(Node *no)
-// {
-//     int metodo_arvore = 0;
-//     printf("Selecione uma opcao:\n1. Inserir na arvore b\n2. Remover na arvore b\n3. Procurar na arvore b\n4. Visualizar arvore b\n5. Voltar\n- ");
-//     scanf("%d", &metodo_arvore);
-
-//     int elemento = 0;
-
-//     TFunc *func = (TFunc *)malloc(sizeof(TFunc));
-
-//     Key_Sorting *key = (Key_Sorting *)malloc(sizeof(Key_Sorting));
-
-//     if (metodo_arvore != 4 && metodo_arvore != 1 && metodo_arvore != 5)
-//     {
-//         printf("Informe o code:\n");
-//         scanf("%d", &elemento);
-
-//         key->code = elemento;
-//     }
-
-//     if (metodo_arvore == 1)
-//     {
-//         fflush(stdin);
-//         printf("\nInforme o code: ");
-//         scanf("%d", &func->code);
-
-//         key->code = func->code;
-//         key->RRN = n;
-
-//         fflush(stdin);
-//         printf("\nInforme o nome: ");
-//         fgets(func->nome, 300, stdin);
-
-//         fflush(stdin);
-//         printf("\nInforme o nascimento: ");
-//         fgets(func->data_nascimento, 300, stdin);
-
-//         fflush(stdin);
-//         printf("\nInforme o salario: ");
-//         scanf("%d", &func->salario);
-//     }
-
-//     switch (metodo_arvore)
-//     {
-//     case 1:
-//         insert(&no, key, n, func);
-
-//         n = n + 1;
-
-//         system("cls");
-//         break;
-//     case 2:
-//         remove_tree(no, elemento);
-
-//         system("cls");
-//         break;
-//     case 3:
-//         search(no, elemento);
-//         break;
-//     case 4:
-//         toString(no);
-//         break;
-//     case 5:
-//         system("cls");
-
-//         return;
-//     default:
-//         printf("Valor invalido.");
-
-//         select_arvore(no);
-//         break;
-//     }
-
-//     free(key);
-// }
 
 void select_busca(FILE *arq, FILE *ordenado, int n)
 {
@@ -496,7 +420,7 @@ void select_busca(FILE *arq, FILE *ordenado, int n)
             insertionSort(ordenado, n);
             break;
         case 3:
-            system("cls");
+            // system("cls");
 
             return;
         default:
@@ -526,7 +450,7 @@ void hash_table(THash *hash)
     int hash_select = 0;
     int hash_metodo = 0;
 
-    FILE *arq_file_hash = fopen("binario_hash.dat", "rb+");
+    FILE *arq = fopen("binario.dat", "rb+");
 
     TFunc *func = (TFunc *)malloc(sizeof(TFunc));
 
@@ -550,7 +474,7 @@ void hash_table(THash *hash)
             scanf("%d", &func->code);
 
             key->code = func->code;
-            key->RRN = n;
+            key->RRN = n * sizeof(TFunc);
 
             fflush(stdin);
             printf("\nInforme o nome: ");
@@ -564,7 +488,7 @@ void hash_table(THash *hash)
             printf("\nInforme o salario: ");
             scanf("%d", &func->salario);
 
-            createArqByOne(*func, arq_file_hash, n);
+            createArqByOne(*func, arq, n);
 
             insert_hash(hash, *key, 7);
 
@@ -580,18 +504,18 @@ void hash_table(THash *hash)
         }
         break;
     case 2:
+        create_many_withTreatment(arq, 100);
         break;
     default:
         printf("Valor invalido.");
         break;
     }
 
-    fclose(arq_file_hash);
+    fclose(arq);
 }
 
 void main()
 {
-    system("cls");
     double time_spent = 0.0;
 
     clock_t begin = clock();
@@ -629,14 +553,10 @@ void main()
 
     createArq(funcs, arq, n);
 
-    // Node *root = NULL;
-
-    // createFuncWithTree(funcs, &root, n);
-
     THash *hash = (THash *)malloc(sizeof(THash));
 
     init(hash, 7);
-
+    create_many(hash, funcs, 7, n);
     int valid = 1;
 
     while (valid == 1)
@@ -653,7 +573,6 @@ void main()
 
             break;
         case 2:
-            // select_arvore(root);
             break;
         case 3:
             selecaoSubs(arq, arq1, arq2, arq3, arq4, arq5, arq6, arq7, arq8, arq9, particao, &u);
@@ -670,7 +589,6 @@ void main()
         scanf("%d", &valid);
     }
 
-    // free(root);
     free(funcs);
 
     clock_t end = clock();

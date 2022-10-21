@@ -1,0 +1,195 @@
+# depslib dependency file v1.0
+1664976327 source:c:\users\lab\desktop\prova-aeds\provaaeds\arvoreb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./arvoreb.h"
+
+1664976327 c:\users\lab\desktop\prova-aeds\provaaeds\arvoreb.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./prova1.h"
+
+1665421100 c:\users\lab\desktop\prova-aeds\provaaeds\prova1.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1665423002 source:c:\users\lab\desktop\prova-aeds\provaaeds\prova1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./prova1.h"
+
+1665431319 source:c:\users\lab\desktop\prova-aeds\provaaeds\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./arvoreb.h"
+
+1665421672 source:c:\users\lab\desktop\prova-aeds\provaaeds\selecao.c
+
+1665421649 c:\users\lab\desktop\prova-aeds\provaaeds\selecao.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./prova1.h"
+
+1664976328 source:c:\users\gustavo\desktop\prova-aeds\provaaeds\arvoreb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./arvoreb.h"
+
+1664976328 c:\users\gustavo\desktop\prova-aeds\provaaeds\arvoreb.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./prova1.h"
+
+1665421102 c:\users\gustavo\desktop\prova-aeds\provaaeds\prova1.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1665461259 source:c:\users\gustavo\desktop\prova-aeds\provaaeds\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./arvoreb.h"
+
+1665450598 source:c:\users\gustavo\desktop\prova-aeds\provaaeds\prova1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./prova1.h"
+
+1665421674 source:c:\users\gustavo\desktop\prova-aeds\provaaeds\selecao.c
+
+1664976328 source:d:\prova-aeds\provaaeds\arvoreb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./arvoreb.h"
+
+1664976328 d:\prova-aeds\provaaeds\arvoreb.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./prova1.h"
+
+1665421102 d:\prova-aeds\provaaeds\prova1.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1665443866 source:d:\prova-aeds\provaaeds\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./arvoreb.h"
+
+1665423004 source:d:\prova-aeds\provaaeds\prova1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./prova1.h"
+
+1665421674 source:d:\prova-aeds\provaaeds\selecao.c
+
+1664976328 source:e:\prova-aeds\provaaeds\arvoreb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./arvoreb.h"
+
+1664976328 e:\prova-aeds\provaaeds\arvoreb.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./prova1.h"
+
+1665421102 e:\prova-aeds\provaaeds\prova1.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1665448572 source:e:\prova-aeds\provaaeds\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./arvoreb.h"
+
+1665423004 source:e:\prova-aeds\provaaeds\prova1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./prova1.h"
+
+1665421674 source:e:\prova-aeds\provaaeds\selecao.c
+
+1666312006 source:c:\users\gustavo\desktop\ib aeds\prova-aeds-main\arvoreb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./arvoreb.h"
+
+1666321380 c:\users\gustavo\desktop\ib aeds\prova-aeds-main\arvoreb.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"./prova1.h"
+
+1666321772 c:\users\gustavo\desktop\ib aeds\prova-aeds-main\prova1.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1666323531 source:c:\users\gustavo\desktop\ib aeds\prova-aeds-main\hash_table.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"hash_table.h"
+	"./lista.h"
+
+1666321390 c:\users\gustavo\desktop\ib aeds\prova-aeds-main\hash_table.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"prova1.h"
+
+1666323531 source:c:\users\gustavo\desktop\ib aeds\prova-aeds-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./hash_table.h"
+	"./lista.h"
+
+1666312008 source:c:\users\gustavo\desktop\ib aeds\prova-aeds-main\prova1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"./prova1.h"
+
+1666312008 source:c:\users\gustavo\desktop\ib aeds\prova-aeds-main\selecao.c
+
+1666323531 source:c:\users\gustavo\desktop\ib aeds\prova-aeds-main\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"./lista.h"
+
+1666315437 c:\users\gustavo\desktop\ib aeds\prova-aeds-main\lista.h
+	<stdio.h>
+	<stdlib.h>
+
