@@ -385,7 +385,6 @@ void selecaoSubs(FILE *arq, FILE *arq1, FILE *arq2, FILE *arq3, FILE *arq4, FILE
     particao++;
 }
 
-
 void select_busca(FILE *arq, FILE *ordenado, int n)
 {
     int valorBusca = 0;
@@ -523,25 +522,21 @@ void main()
 
     FILE *arq = fopen("binario.dat", "w+b");
 
-    FILE *arq1 = fopen("part1.dat", "w+b");
-    FILE *arq2 = fopen("part2.dat", "w+b");
-    FILE *arq3 = fopen("part3.dat", "w+b");
-    FILE *arq4 = fopen("part4.dat", "w+b");
-    FILE *arq5 = fopen("part5.dat", "w+b");
-    FILE *arq6 = fopen("part6.dat", "w+b");
-    FILE *arq7 = fopen("part7.dat", "w+b");
-    FILE *arq8 = fopen("part8.dat", "w+b");
-    FILE *arq9 = fopen("part8.dat", "w+b");
+    FILE *arq7 = fopen("0.dat", "w+b");
+    FILE *arq1 = fopen("1.dat", "w+b");
+    FILE *arq2 = fopen("2.dat", "w+b");
+    FILE *arq3 = fopen("3.dat", "w+b");
+    FILE *arq4 = fopen("4.dat", "w+b");
+    FILE *arq5 = fopen("5.dat", "w+b");
+    FILE *arq6 = fopen("6.dat", "w+b");
 
-    arq1 = fopen("part1.dat", "r+b");
-    arq2 = fopen("part2.dat", "r+b");
-    arq3 = fopen("part3.dat", "r+b");
-    arq4 = fopen("part4.dat", "r+b");
-    arq5 = fopen("part5.dat", "r+b");
-    arq6 = fopen("part6.dat", "r+b");
-    arq7 = fopen("part7.dat", "r+b");
-    arq8 = fopen("part8.dat", "r+b");
-    arq9 = fopen("part8.dat", "r+b");
+    arq1 = fopen("0.dat", "r+b");
+    arq2 = fopen("1.dat", "r+b");
+    arq3 = fopen("2.dat", "r+b");
+    arq4 = fopen("3.dat", "r+b");
+    arq5 = fopen("4.dat", "r+b");
+    arq6 = fopen("5.dat", "r+b");
+    arq7 = fopen("6.dat", "r+b");
 
     FILE *ordenado = fopen("binario_ordenado.dat", "wb"), *arq_file = fopen("binario_arvore_b.dat", "wb");
 
@@ -575,7 +570,7 @@ void main()
         case 2:
             break;
         case 3:
-            selecaoSubs(arq, arq1, arq2, arq3, arq4, arq5, arq6, arq7, arq8, arq9, particao, &u);
+            // selecaoSubs(arq, arq1, arq2, arq3, arq4, arq5, arq6, arq7, arq8, arq9, particao, &u);
             break;
         case 4:
             hash_table(hash);
